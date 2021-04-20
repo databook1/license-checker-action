@@ -40,7 +40,7 @@ File should have the following structure:
 ### Add action to your workflows
 
 ```yaml
-uses: pjamrozowicz/license-checker-action@master
+uses: databook1/license-checker-action@master
 with:
   dependencies-sources: 'package.json,bower.json'
 ```
