@@ -1,0 +1,10 @@
+{
+  "package.json": {
+    "dependencies": {
+      "@actions/core": {
+        "version": "^1.2.7",
+        "license": "MIT"
+      }
+    }
+  }
+}
