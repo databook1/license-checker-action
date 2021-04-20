@@ -1,0 +1,25 @@
+{
+  "name": "license-checker-action",
+  "version": "1.0.0",
+  "description": "Validate licenses used by dependencies",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "prepare": "ncc build index.js -o dist --source-map --license licenses.txt",
+    "all": "npm run lint && npm run prepare"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pjamrozowicz/license-checker-action.git"
+  },
+  "author": "pjamrozowicz",
+  "license": "MIT",
+  "homepage": "https://github.com/pjamrozowicz/license-checker-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.7"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.3",
+    "eslint": "^7.24.0"
+  }
+}

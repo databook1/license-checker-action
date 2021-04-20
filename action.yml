@@ -1,0 +1,10 @@
+name: 'License Checker'
+description: 'Validate licenses used by dependencies'
+inputs:
+  dependencies-sources:
+    description: 'Where are your dependencies located (comma separated)'
+    required: false
+    default: 'package.json'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
